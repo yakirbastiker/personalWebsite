@@ -1,0 +1,26 @@
+<div class="box" *ngIf="this.mode === 'flex'">
+    <div class="slider-left"><</div>
+    <div class="card" *ngFor="let work of works">
+        <img class="card__img" src="{{ work.img }}" alt="{{ work.title }}">
+        <h2 class="card__title">{{ work.title }}</h2>
+        <!-- <a href="{{ work.url }}" class="card__link">visit website</a>
+        <p class="card__description">{{ work.description }}</p> -->
+    </div>
+    <div class="slider-right">></div>
+</div>
+
+
+<div class="grid center" *ngIf="this.mode === 'grid'">
+    <div class="card" *ngFor="let work of works">
+        <img class="card__img" src="{{ work.img }}" alt="{{ work.title }}">
+        <div class="text">
+            <h2 class="card__title">{{ work.title }}</h2>
+            <a href="{{ work.url }}" target="_blank" class="card__link">visit website</a>
+            <p class="card__description">{{ work.description }}</p>
+        </div>
+    </div>
+</div>
+
+<svg *ngIf="this.mode === 'spinner'" class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+ </svg>

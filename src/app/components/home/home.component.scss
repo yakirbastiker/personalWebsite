@@ -1,0 +1,28 @@
+.text {
+    &-name {
+        color: #3E91A2;
+        font-size: 3rem;
+    }
+
+    &-pro {
+        color: #eee;
+        font-size: 2rem;
+    }
+}
+
+.box {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-img {
+    width: 150px;
+    margin-left: 3rem;
+}
+
+
+//effect 
+

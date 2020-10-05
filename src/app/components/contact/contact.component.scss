@@ -1,0 +1,367 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    width: 100vw;
+    min-width: max-content;
+    height: 3rem;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+#email {
+  color: rgb(240, 119, 13);
+  font-size: .8rem;
+  cursor: grab;
+  transition: all .2s ease-in;
+
+  &:hover{
+    color: rgb(218, 111, 18);
+  }
+}
+
+.links {
+    width: max-content;
+    max-width: 100%;
+    display: flex;
+}
+
+.links > * {
+    margin-right: .5rem;
+}
+.link {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+//linkedin
+
+#linkedin-color {
+    display: none;
+}
+
+.linkedin:hover {
+    
+    #linkedin {
+        display: none;
+    }
+
+    #linkedin-color {
+        display: block;
+    }
+}
+
+
+//facebook
+
+#facebook-color {
+    display: none;
+}
+
+#facebook {
+    display: block !important;
+}
+
+.facebook:hover {
+    
+    #facebook {
+        display: none !important;
+    }
+
+    #facebook-color {
+        display: block !important;
+    }
+}
+
+//codepen
+#codepen-color {
+  display: none;
+}
+
+#codepen {
+  display: block !important;
+}
+
+.codepen:hover {
+  
+  #codepen {
+      display: none !important;
+  }
+
+  #codepen-color {
+      display: block !important;
+  }
+}
+
+
+//github
+
+#github-color {
+    display: none;
+}
+
+#github {
+    display: block !important;
+}
+
+.github:hover {
+    
+    #github {
+        display: none !important;
+    }
+
+    #github-color {
+        display: block !important;
+    }
+}
+
+//instagram
+
+#instagram-color {
+    display: none;
+}
+
+#instagram {
+    display: block !important;
+}
+
+.instagram:hover {
+    
+    #instagram {
+        display: none !important;
+    }
+
+    #instagram-color {
+        display: block !important;
+    }
+}
+
+
+
+//form style
+
+.background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #ed1c6f;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ea1d6f;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #ea1d6f;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    // text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #ea1d6f;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    margin-right: .5rem;
+  }
+  
+  .app-form-button:hover {
+    color: #b9134f;
+  }
+  
+  .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffa4bd;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+  
